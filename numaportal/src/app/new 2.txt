@@ -1,0 +1,139 @@
+ public void bannerInfo(int info_like, int info_dislike, int info_comentarios, int info_compartido) {
+
+        if (info_like == 0 && info_dislike == 0 && info_comentarios == 0) {
+             info.setText("");
+            if (info_compartido == 1) {
+                 info.setText(info_compartido + " vez compartido");
+
+            } else if (info_compartido > 1) {
+                 info.setText(info_compartido + " veces compartido");
+            }
+
+        } else if (info_like > 0 && info_dislike == 0 && info_comentarios == 0) {
+             info.setText(info_like + " me gusta  ");
+
+            if (info_compartido == 1) {
+                 info.setText(info_like + " me gusta  • " + info_compartido + " vez compartido");
+
+            } else if (info_compartido > 1) {
+                 info.setText(info_like + " me gusta  • " + info_compartido + " veces compartido");
+            }
+
+
+        } else if (info_like == 0 && info_dislike > 0 && info_comentarios == 0) {
+             info.setText(+info_dislike + " no me gusta");
+
+            if (info_compartido == 1) {
+                 info.setText(+info_dislike + " no me gusta • " + info_compartido + " vez compartido");
+
+            } else if (info_compartido > 1) {
+                 info.setText(+info_dislike + " no me gusta • " + info_compartido + " veces compartido");
+            }
+
+        } else if (info_like > 0 && info_dislike > 0 && info_comentarios == 0) {
+             info.setText(info_like + " me gusta • " + info_dislike + " no me gusta  ");
+
+            if (info_compartido == 1) {
+                 info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_compartido + " vez compartido");
+
+            } else if (info_compartido > 1) {
+                 info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_compartido + " veces compartido");
+            }
+
+        } else if (info_like == 0 && info_dislike == 0 && info_comentarios > 0) {
+
+            if (info_comentarios == 1) {
+                 info.setText(+info_comentarios + " comentario");
+
+                if (info_compartido == 1) {
+                     info.setText(+info_comentarios + " comentario • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(+info_comentarios + " comentario • " + info_compartido + " veces compartido");
+                }
+
+            } else if (info_comentarios > 1) {
+                 info.setText(+info_comentarios + " comentarios");
+                if (info_compartido == 1) {
+                     info.setText(+info_comentarios + " comentarios • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(+info_comentarios + " comentarios • " + info_compartido + " veces compartido");
+                }
+
+            }
+        } else if (info_like > 0 && info_dislike == 0 && info_comentarios > 0) {
+
+
+            if (info_comentarios == 1) {
+                 info.setText(info_like + " me gusta • " + info_comentarios + " comentario ");
+                if (info_compartido == 1) {
+                     info.setText(info_like + " me gusta • " + info_comentarios + " comentario • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(info_like + " me gusta • " + info_comentarios + " comentario • " + info_compartido + " veces compartido");
+                }
+
+            } else if (info_comentarios > 1) {
+                 info.setText(info_like + " me gusta • " + info_comentarios + " comentarios ");
+
+                if (info_compartido == 1) {
+                     info.setText(info_like + " me gusta • " + info_comentarios + " comentarios • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(info_like + " me gusta • " + info_comentarios + " comentarios • " + info_compartido + " veces compartido");
+                }
+            }
+        } else if (info_like == 0 && info_dislike > 0 && info_comentarios > 0) {
+
+
+            if (info_comentarios == 1) {
+                 info.setText(+info_dislike + " no me gusta • " + info_comentarios + " comentario ");
+
+
+                if (info_compartido == 1) {
+                     info.setText(+info_dislike + " no me gusta • " + info_comentarios + " comentario • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(+info_dislike + " no me gusta • " + info_comentarios + " comentario • " + info_compartido + " veces compartido");
+                }
+
+            } else if (info_comentarios > 1) {
+                 info.setText(+info_dislike + " no me gusta • " + info_comentarios + " comentarios ");
+
+                if (info_compartido == 1) {
+                     info.setText(+info_dislike + " no me gusta • " + info_comentarios + " comentarios • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(+info_dislike + " no me gusta • " + info_comentarios + " comentarios • " + info_compartido + " veces compartido");
+                }
+            }
+        } else if (info_like > 0 && info_dislike > 0 && info_comentarios > 0) {
+
+            if (info_comentarios == 1) {
+                 info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_comentarios + " comentario ");
+
+                if (info_compartido == 1) {
+                     info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_comentarios + " comentario • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_comentarios + " comentario • " + info_compartido + " veces compartido");
+                }
+            } else if (info_comentarios > 1) {
+                 info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_comentarios + " comentarios ");
+
+                if (info_compartido == 1) {
+                     info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_comentarios + " comentarios • " + info_compartido + " vez compartido");
+
+                } else if (info_compartido > 1) {
+                     info.setText(info_like + " me gusta • " + info_dislike + " no me gusta • " + info_comentarios + " comentarios • " + info_compartido + " veces compartido");
+                }
+            }
+
+             info.setTextSize(10f);
+
+
+        }
+
+
+    }
