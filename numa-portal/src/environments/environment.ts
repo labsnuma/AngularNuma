@@ -7,11 +7,11 @@ export const environment = {
   production: false,
   firebase: {
 
-    apiKey: "AIzaSyBffHV9eV0UmVdziCvC15kirRfa4Z7zjkY",
-    authDomain: "numapp-67674.firebaseapp.com",
-    databaseURL: "https://numapp-67674.firebaseio.com",
-    projectId: "numapp-67674",
-    storageBucket: "numapp-67674.appspot.com",
-    messagingSenderId: "623683923765"
+    apiKey: 'AIzaSyBffHV9eV0UmVdziCvC15kirRfa4Z7zjkY',
+    authDomain: 'numapp-67674.firebaseapp.com',
+    databaseURL: 'https://numapp-67674.firebaseio.com',
+    projectId: 'numapp-67674',
+    storageBucket: 'numapp-67674.appspot.com',
+    messagingSenderId: '623683923765'
   }
 };

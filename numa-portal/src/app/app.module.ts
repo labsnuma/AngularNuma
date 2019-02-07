@@ -10,6 +10,12 @@ import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 
+// firebase
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
+
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TableListComponent } from './table-list/table-list.component';
@@ -22,10 +28,13 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { from } from 'rxjs';
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
     HttpModule,
     ComponentsModule,
