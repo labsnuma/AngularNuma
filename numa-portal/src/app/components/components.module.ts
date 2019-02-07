@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
+import { ProductComponent } from './products/product/product.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { ProductListComponent } from './products/product-list/product-list.compo
     NavbarComponent,
     SidebarComponent,
     ProductsComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductComponent
   ],
   exports: [
     FooterComponent,

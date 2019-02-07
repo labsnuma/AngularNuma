@@ -15,6 +15,14 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
+// components
+import { ProductsComponent } from './components/products/products.component';
+import { ProductComponent } from './components/products/product/product.component';
+import { ProductListComponent } from './components/products/product-list/product-list.component';
+
+// services
+
+import { ProductService } from './services/product.service';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
@@ -29,6 +37,8 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { from } from 'rxjs';
+import * as productService from './services/product.service';
+
 
 @NgModule({
   imports: [
@@ -49,7 +59,9 @@ import { from } from 'rxjs';
     AdminLayoutComponent,
 
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
